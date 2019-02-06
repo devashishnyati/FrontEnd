@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Select List Input</title>
+</head>
+
+<body>
+    <form action="menu"
+          method="post">
+        <fieldset>
+            <legend>User input</legend>
+            <p>
+                <label>First name:</label>
+                <input name="firstName" type="text" />
+            </p>
+            <p>
+                <label>Last name:</label>
+                <input name="lastName" type="text" />
+            </p>
+            
+            <p>
+                <label>Any formatting?</label>
+                <input type="checkbox"
+                       name="strong"
+                       value="strong" /> Strong!
+                <input type="checkbox"
+                       name="em"
+                       value="em" /> Emphasized!
+            </p>
+            
+            <p>
+                <label>Direction?</label>
+                <input type="radio"
+                       name="direction"
+                       value="coming" 
+                       checked /> Coming
+                <input type="radio"
+                       name="direction"
+                       value="going" /> Going
+            </p>
+            
+            <p>
+                <label>Language?</label>
+                <select name="language">
+                    <option value="english" selected>English</option>
+                    <option value="french">Français</option>
+                    <option value="german">Deutsch</option>
+                </select>
+            </p>
+               
+            <p>
+                <input type="submit" value="Submit" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
