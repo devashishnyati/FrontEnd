@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Validate Crime Details</title>
+    <link rel="stylesheet" type="text/css" href="validateAddCrime.css" />
+    
+    <script type = "text/javascript">
+        function validate()
+        {
+            date  = document.getElementById("date").value;
+            address = document.getElementById("address").value;
+            crime  = document.getElementById("crime").value;
+            description=document.getElementById("description").value;
+            
+            errors = "";
+    
+            if (date == "") {
+                errors += "Missing date.\n";
+            } 
+            if (address == "") {
+                errors += "Missing address.\n";
+            } 
+            if (crime == "") {
+                errors += "Missing crime.\n";
+            } 
+            if (description == "") {
+                errors += "Missing description.\n";
+            } 
+           
+    
+            if (errors != "") {
+              alert(errors);
+            }
+            else{
+                document.addcrime.submit();
+
+            }
+           
+        }
+    </script>
+</head>
+
+<body>
+
+<form name="addcrime" id="addcrime" method="post" action="/addcrime">
+    
+        <fieldset>
+        <p>
+            <h1>Crime Details</h1>
+            <label>Date:</label><br>
+            <input type = "date"
+                   name = date
+                   id = "date" />
+         </p><div><p>
+            <label>Address:</label><br>
+            <input type = "text"
+                   name = address
+                   id = "address" />
+                      </p><p>
+             
+            <label>Crime:</label><br>
+            <input type = "text"
+                   name = crime
+                   id = "crime" />
+                            </p><p>
+            <label>Description:</label><br>
+            <input type = "text"
+                   name = description
+                   id = "description" />
+                            </p></div><p>       
+            <label>Arrest:</label><br>
+            <input type="radio"
+            	       name=arrest
+            	       id="arrest"
+            	       value="Yes" 
+            	       checked /> Yes
+            	<input type="radio"
+            	       name=arrest
+            	       value="No" /> No
+            	                </p><p>
+            	       
+            <label>Domestic:</label><br>
+            <input type="radio"
+            	       name=domestic
+            	       value="Yes" 
+            	       checked /> Yes
+            	<input type="radio"
+            	       name=domestic
+            	       value="No" /> No
+            	                </p>
+            	<p>
+            <center>	       
+            <button type = "button" class="button"
+                    onclick = "validate()">
+                Submit
+            </button>
+            </center>
+            </p>
+            
+        </fieldset>
+    </form>
+    
+    </body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  align-items: center;
+  align-content: center;
+    background-repeat: no-repeat;
+  	height: 100%;
+  	background-position: center;
+  	background-size: cover;
+  	position: relative;
+  	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/city_sky2.jpeg");
+}
+h1 {
+  color: balck;
+  text-align: center;
+}
+
+
+
+form  {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+
+}
+div input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  width: 20em;
+  background-color: #c5c9d3;
+  box-shadow: 5px 5px 5px gray;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:auto;
+}
+
+p {
+  font-family: verdana;
+  font-size: 14px;
+}
+
+.button {
+  background-color: #f4511e; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: center;
+
+}
+
+
+.button:hover {
+  background-color: #3e8e41;
+}
